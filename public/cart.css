@@ -1,0 +1,122 @@
+.caio{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.349);
+  z-index: 80;
+  display: none;
+}
+.cart-page{
+  width: 500px;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  z-index: 90;
+  top: 60px;
+  right:0;
+  float: right;
+  display: block;
+  transform: translateX(100%);
+  /* transition: 3s; */
+}
+
+.cart-header{
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+  border-bottom: 1px solid rgb(165, 165, 165);
+  text-align: center;
+}
+.cart-header i{
+  float: right;
+  font-size: 20px;
+  margin-top: 15px;
+
+}
+
+.cart-header p{
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.cart-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-height: 70%;
+  overflow: auto;
+}
+
+.cart-items{
+  padding: 15px 30px;
+  width: 100%;
+  border-bottom: 1px solid gray;
+  word-break: break-all;
+  display: flex;
+
+}
+.item-img{
+  width: 120px;
+  margin-right: 20px ;
+}
+.item-infos{
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  word-break: break-all;
+}
+.item-infos p {
+  word-break: break-all;
+}
+.item-infos .price{
+  color: rgb(82, 82, 82);
+}
+.cart-items i{
+  float: right;
+  color: rgb(161, 161, 161);
+
+}
+
+#quantity{
+  margin-top: 20px;
+  width: 50px;
+  height: 30px;
+  font-size: 15px;
+  border: 0.5px solid rgb(163, 163, 163);
+  cursor: pointer;
+}
+
+
+.cart-footer{
+  width: 100%;
+  padding: 15px 30px;
+  margin-bottom: 70px;
+  font-size: 18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.final-price-box{
+  height: 60px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.btn-black{
+  background-color: rgb(15, 15, 15);
+  color: whitesmoke;
+  width: 100%;
+  height: 70px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+.btn-black :hover{
+  background-color: blue;
+}

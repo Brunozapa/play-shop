@@ -1,0 +1,96 @@
+.game-page{
+    background-color: #1d1d1d;
+    height: 1000px;
+}
+.background-img{
+    width: 100%;
+    z-index: 1;
+}
+.infos-container{
+    margin: auto;
+    width: 100%;
+    height: 100px;
+
+    color: whitesmoke;
+
+}
+.infos-aux-box{
+    margin: auto;
+    width: 750px;
+    display: block;
+}
+.aa{
+    display: none;  
+}
+.infos-box{
+    width: 750px; 
+    height: 320px;
+    margin-top: -170px;
+    padding: 30px;
+    background-color: #1d1d1d;
+    border-radius: 20px;
+    position: absolute;
+}
+.botton-infos{
+    margin-top: 10px;
+}
+.top-infos{
+    height: 150px;
+}
+
+h2{
+    float: left;
+    font-size: 30px;
+    width: 70%;
+    border-left: 0;
+    color: whitesmoke;
+}
+
+.top-left-infos{
+    width: 30%;
+    float: right;
+    font-size: 20px;
+}
+
+.top-left-infos span{
+    float: right;
+    margin-bottom: 10px;
+}
+.top-left-infos button{
+    float: right;
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    font-family:'Saira', sans-serif, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    background: #c4c4c4;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+
+.top-left-infos .price-txt{
+    float: right;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+
+@media screen and (max-width: 768px) {
+    .infos-box{
+        width: 100%; 
+        height: 320px;
+        padding: 30px;
+        margin-top: 0;
+        background-color: #1d1d1d;
+        border-radius: 0;
+
+    }
+/*     .infos-aux-box{
+    display: none;
+    }
+    .aa{
+        display: block;
+    } */
+}
