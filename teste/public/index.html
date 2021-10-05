@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="stylesheet" href="style/index.css">
+  <link rel="stylesheet" href="style/cart.css">
+  <link rel="stylesheet" href="style/ProductSlider.css">
+  <link rel="stylesheet" href="style/SingleSlider.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="../src/components/games.js"></script>
+  <script src="index.js"></script>
+  <script src="https://kit.fontawesome.com/6f2d70ffaf.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+
+  <title>PlayShop</title>
+
+</head>
+
+<body id="body">
+  <header>
+    <div class="menu-bar-container">
+      <!-- /* nav bar desktop */ -->
+      <nav class="navegation-bar">
+        <ul class="navegation-bar-list">
+          <a href="">Home</a>
+          <a href="">Catalog</a>
+        </ul>
+      </nav>
+      <!-- nav bar mobile -->
+      <div class="navegation-mobile">
+        <i class="fas fa-bars"></i>
+      </div>
+      <!-- logo -->
+      <div class="menu-bar-logo">PlayShop</div>
+      <!-- icons -->
+      <nav class="icons-bar">
+        <a href=""><i class="fas fa-search"></i></a>
+        <a href=""><i class="fas fa-user"></i></a>
+        <a onclick="openCart()"><i class="fas fa-shopping-cart"></i></a>
+      </nav>
+    </div>
+  </header>
+  <section id="shopping_cart">
+    <div class="caio" id="absolute"></div>
+    <div class="cart-page" id="cart_page">
+      <div class="cart-container">
+
+        <div class="cart-header">
+          <i onclick=closeCart() class="fas fa-times"></i>
+          <p>Shopping Cart</p>
+        </div>
+        <div class="cart-items">
+          <img src="Images/products/gow.jpg" class="item-img" />
+          <div class="item-infos">
+            <p>{item.name}</p>
+            <p class="price">${item.price}</p>
+            <select id="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="cart-footer">
+          <div class="final-price-box">
+            <span class="final-price-box-total">Total:</span>
+            <span class="final-price-box-price">2</span>
+          </div>
+          <button class="btn-black">Place Order</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="slider">
+    <div class="glider-contain">
+      <div class="glider">
+        <img src="Images/ellie.jpg" class="main-img">
+        <img src="Images/got-directors-cut.jpg" class="main-img">
+        <img src="Images/kratos.jpg" class="main-img">
+      </div>
+    </div>
+  </section>
+  <section id="carousel">
+    <div class="carousel-contain">
+      <h2 class="carousel-title">ON SALE</h2>
+      <div class="products" id="glider_products">
+        <a href="">
+          <div className="product-box" key=2>
+            <img src="Images/products/got.jpg" />
+            <h3 className='price'>${item.price}</h3>
+            <h3>{item.name}</h3>
+          </div>
+        </a>
+        <a href="">
+          <div className="product-box" key=2>
+            <img src="Images/products/got.jpg" />
+            <h3 className='price'>${item.price}</h3>
+            <h3>{item.name}</h3>
+          </div>
+        </a>
+        <a href="">
+          <div className="product-box" key=2>
+            <img src="Images/products/got.jpg" />
+            <h3 className='price'>${item.price}</h3>
+            <h3>{item.name}</h3>
+          </div>
+        </a>
+        <a href="">
+          <div className="product-box" key=2>
+            <img src="Images/products/got.jpg" />
+            <h3 className='price'>${item.price}</h3>
+            <h3>{item.name}</h3>
+          </div>
+        </a>
+        <a href="">
+          <div className="product-box" key=2>
+            <img src="Images/products/got.jpg" />
+            <h3 className='price'>${item.price}</h3>
+            <h3>{item.name}</h3>
+          </div>
+        </a>
+        <a href="">
+          <div className="product-box" key=2>
+            <img src="Images/products/got.jpg" />
+            <h3 className='price'>${item.price}</h3>
+            <h3>{item.name}</h3>
+          </div>
+        </a>
+      </div>
+      <button aria-label="Previous" class="glider-prev"><i class="fas fa-arrow-circle-left"></i></button>
+      <button aria-label="Next" class="glider-next"><i class="fas fa-arrow-alt-circle-right"></i></button>
+      <div role="tablist" class="dots"></div>
+    </div>
+  </section>
+  <section class="classics">
+    <div class="classics-container">
+      <img src="Images/uncharted.jpg" class="classics-container-img" />
+      <img src="Images/spider-man.jpg" class="classics-container-img" />
+      <img src="Images/godofwar.jpg" class="classics-container-img" />
+    </div>
+  </section>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+
+</body>
+
+</html>

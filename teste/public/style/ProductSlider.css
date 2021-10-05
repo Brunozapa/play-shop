@@ -1,0 +1,47 @@
+#carousel{
+    margin: auto;
+    width: 90%;
+    z-index: 5;
+}
+.carousel-contain{
+    margin: auto;
+    padding-top: 20px;
+    height: 500px;
+    max-width: 90%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+.carousel-contain i{
+    margin-top: 60px;
+    font-size: 30px;
+}
+h1, h2, h3 {
+    margin: auto;
+    padding-top: 20px;
+}
+.carousel-title{
+    font-size: 30px;
+}
+.products{
+    padding-top: 30px;
+}
+.pass-icon{
+    filter: invert(1);
+}
+.product-box{
+    margin-top: 50px;
+    cursor: pointer;
+}
+.product-inside-box :hover{
+    filter:opacity(0.7);
+}
+img{
+    width: 160px;
+    margin: auto;
+}
+.price{
+    color: #0188B2;
+}
+
+  

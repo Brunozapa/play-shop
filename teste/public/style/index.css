@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body {
+    font-family:'Saira', sans-serif, Arial, Helvetica, sans-serif;
+    color: black;
+}
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+  }
+  
+   ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+  }
+  
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    width: 100%;
+    top: 0;
+    position: fixed;
+    background-color: white;
+    border-bottom: 4px solid black;
+    z-index: 100;
+}
+
+
+.menu-bar-container{
+    margin: auto;
+    padding: 0px 20px;
+    max-width: 1500px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);    
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+}
+
+.navegation-bar{
+    float: left;
+}
+
+.navegation-bar-list{
+    list-style: none;
+    display: block;
+}
+
+.navegation-bar-list a{
+    text-decoration: none;
+    color: black;
+    font-size:19px;
+    font-weight: 500;
+    margin-right: 40px; 
+}
+
+.navegation-mobile{
+    display: none;
+}
+
+.menu-bar-logo{
+    font-size: 30px;
+    font-weight: 500;
+    margin: auto;
+}
+
+.icons-bar{
+    float: right;
+}
+.icons-bar a{
+    text-decoration: none;
+    color: black;
+}
+.icons-bar i{
+    font-size: 20px;
+     margin-right: 30px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navegation-mobile{
+        display: block;
+        font-size: 20px;
+        float: left;
+    }
+    .navegation-bar-list{
+        display: none;
+    }
+    .icons-bar i{
+        font-size: 20px;
+         margin-right: 10px;
+    }
+}
+
+/* section Main */
+
+.main{
+   background-color: #FFFF;
+   margin-top: 40px;
+}
+#caroseul-container{
+    width: 100%;
+}
+.main-img{
+    height: 100%;
+    width: 100%;  
+}
+
+.products-container{
+    margin: auto;
+    padding: 30px;
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.classics{
+    width: 100%;
+    background: #111111;
+    margin-top: -20px;
+}
+.classics-container{
+    margin: auto;
+    padding: 40px;
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.classics-container-img{
+    width: 30%;
+}
+.fa-shopping-cart:hover{
+    cursor: pointer;   
+}
+.fa-times:hover{
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .classics-container-img{
+        margin: 15px auto;
+        width:  80%;
+    }
+}

@@ -27,16 +27,16 @@
     
   </head>
 
-  <body id="body">
+  <body>
 
     <div id="root"></div>
 
   </body>
 </html>
 <script>
-      function openCart(){
-        absolute.style = "display: block;";
-        cart_page.style = "transform: translateX(0);";
-        body.style = "overflow: hidden;";
-      }
+  function openCart(){
+    document.getElementById(absolute).style = "display: block;";
+    document.getElementById(cart_page).style = "transform: translateX(0);";
+    document.getElementsByTagName(body).style = "overflow: hidden;";
+  }
 </script>
